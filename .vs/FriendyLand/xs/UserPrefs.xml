@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{71E43B04-F935-DF79-E58F-D1C7E794D411}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/NetworkPlayerSpawner.cs">
+    <Files>
+      <File FileName="Assets/GrabNetworkInteractable.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/HandPresence.cs" />
+      <File FileName="Assets/NetworkPlayer.cs" />
+      <File FileName="Assets/NetworkManager.cs" />
+      <File FileName="Assets/NetworkPlayerSpawner.cs" Line="13" Column="58" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FriendyLand" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True" />
+              <Node name="GrabNetworkInteractable.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e31fcb29-afa6-4ec1-9513-a2bdab5df89d" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
