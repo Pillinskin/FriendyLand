@@ -1,16 +1,20 @@
 ﻿<Properties StartupConfiguration="{71E43B04-F935-DF79-E58F-D1C7E794D411}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/NetworkPlayer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/spellScript.cs">
     <Files>
-      <File FileName="Assets/NetworkPlayer.cs" Line="37" Column="1" />
-      <File FileName="Assets/NetworkManager.cs" />
-      <File FileName="Assets/NetworkPlayerSpawner.cs" Line="13" Column="58" />
+      <File FileName="Assets/spellScript.cs" Line="18" Column="1" />
+      <File FileName="Assets/ProtectionSpell.cs" Line="10" Column="9" />
+      <File FileName="Assets/NetworkPlayer.cs" Line="64" Column="13" />
+      <File FileName="Assets/Spells.cs" Line="47" Column="10" />
+      <File FileName="Assets/MyLocomotionController.cs" />
+      <File FileName="Assets/NetworkManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/NetworkPlayerSpawner.cs" Line="22" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FriendyLand" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="NetworkPlayer.cs" selected="True" />
+              <Node name="spellScript.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -19,7 +23,6 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fdfe9cc7-f16c-434f-b42d-c2bb19368555" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

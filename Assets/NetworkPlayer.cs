@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 using Photon.Pun;
+using UnityEngine.XR.Interaction.Toolkit;
 public class NetworkPlayer : MonoBehaviour
 {
     public Transform head;
@@ -14,11 +15,20 @@ public class NetworkPlayer : MonoBehaviour
 
     private PhotonView photonView;
 
+    private Transform headRig;
+    private Transform lefthandRig;
+    private Transform rightHandRig;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         photonView = GetComponent<PhotonView>();
+        XRRig rig = FindObjectOfType<XRRig>();
+        headRig = rig.transform.Find("Camera Offset/Main Camera");
+        lefthandRig = rig.transform.Find("Camera Offset/LeftHand Controller");
+        rightHandRig = rig.transform.Find("Camera Offset/RightHand Controller");
 
         //Disable the view of the network player by the player itself.
         if (photonView.IsMine)
@@ -36,9 +46,9 @@ public class NetworkPlayer : MonoBehaviour
     {
         if (photonView.IsMine)
         {
-            MapPosition(head, GameObject.Find("CenterEyeAnchor").transform);
-            MapPosition(leftHand, GameObject.Find("LeftControllerAnchor").transform);
-            MapPosition(rightHand, GameObject.Find("RightControllerAnchor").transform);
+            MapPosition(head, headRig);
+            MapPosition(leftHand, lefthandRig);
+            MapPosition(rightHand, rightHandRig);
 
             UpdateHandAnimation(InputDevices.GetDeviceAtXRNode(XRNode.LeftHand), leftHandAnimator);
             UpdateHandAnimation(InputDevices.GetDeviceAtXRNode(XRNode.RightHand), rightHandAnimator);
@@ -69,10 +79,7 @@ public class NetworkPlayer : MonoBehaviour
     //Target will get the position and the rotation of the XR node
     void MapPosition(Transform target, Transform from)
     {
-
-        Vector3 position = from.position;
-        Quaternion rotation = from.rotation;
-        target.position = position;
-        target.rotation = rotation;
+        target.position = from.position;
+        target.rotation = from.rotation;
     }
 }
