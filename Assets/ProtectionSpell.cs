@@ -10,24 +10,23 @@ public class ProtectionSpell : MonoBehaviour
     public Collider protectionOn;
     public InputHelpers.Button protectButton;
     public float activationThreshold = 0.2f;
-    public PhotonView photonView;
-
+    public NetworkPlayer me;
+    //GLOBAL BOOL
+    public static bool ProtecON = false;
     // Start is called before the first frame update
     void Start()
     {
         //Disable the view of the network player by the player itself.
         protectionMesh.enabled = false;
         protectionOn.enabled = false;
-
     }
+        
 
     // Update is called once per frame
     void Update()
     {
-        if (photonView.IsMine)
-        {
-            UpdateSpellNetwork(InputDevices.GetDeviceAtXRNode(XRNode.RightHand), protectionMesh);
-        }
+         UpdateSpellNetwork(InputDevices.GetDeviceAtXRNode(XRNode.RightHand), protectionMesh);
+            
     }
 
     public bool CheckIfActivated(InputDevice targetdevice)
@@ -41,11 +40,13 @@ public class ProtectionSpell : MonoBehaviour
     {
         if (CheckIfActivated(targetDevice))
         {
+            ProtecON = true;
             theSpell.enabled = true;
-            protectionOn.enabled = true;
+            protectionOn.enabled = true;            
         }
         else
         {
+            ProtecON = false;
             theSpell.enabled = false;
             protectionOn.enabled = false;
         }

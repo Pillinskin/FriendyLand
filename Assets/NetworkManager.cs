@@ -24,7 +24,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         base.OnConnectedToMaster();
         //Connect to a room
         RoomOptions roomOptions = new RoomOptions();
-        roomOptions.MaxPlayers = 4;
+        roomOptions.MaxPlayers = 6;
         roomOptions.IsVisible = true;
         roomOptions.IsOpen = true;
 

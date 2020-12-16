@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - GrabNetworkInteractable
     - HandPresence
+    - LocalNetworkVisibility
     - MyLocomotionController
     - NetworkManager
     - NetworkPlayer
@@ -173,6 +174,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16600}
     - Class: 114
       Script: {instanceID: 109158}
+    - Class: 114
+      Script: {instanceID: 280438}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -942,7 +945,7 @@ ScriptsOnlyBuild:
     className: AudioManager
   - hash:
       serializedVersion: 2
-      Hash: 5b8eefa798727882ade2ce04b5700007
+      Hash: 83819571461ffcf77f9861be42ed289b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: spellScript
@@ -2622,10 +2625,22 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 47661ee05283ae96c09b5728847d62d3
+      Hash: 153f9ab1cc0ae1a1e44947b357ee33b2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ProtectionSpell
+  - hash:
+      serializedVersion: 2
+      Hash: 498e4276886d8c41a5075747e7b9f075
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WandPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 5f7ac60fa0a4179eec88b36ed3da2d12
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LocalNetworkVisibility
   platform: 13
   scenePathNames:
   - Assets/Scenes/War Zone.unity

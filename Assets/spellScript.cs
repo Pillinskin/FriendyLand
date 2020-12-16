@@ -10,8 +10,9 @@ public class spellScript : MonoBehaviour
     public GameObject spell;
     public InputHelpers.Button spellButton;
     public float activationThreshold = 0.2f;
-    public PhotonView photonView;
 
+    //GLOBAL BOOL
+    public static bool IceON = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,10 +24,7 @@ public class spellScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (photonView.IsMine)
-        {
             UpdateSpellNetwork(InputDevices.GetDeviceAtXRNode(XRNode.RightHand), spell);
-        }
     }
     public bool CheckIfActivated(InputDevice targetdevice)
     {
@@ -40,10 +38,13 @@ public class spellScript : MonoBehaviour
         if (CheckIfActivated(targetDevice))
         {
             spell.SetActive(true);
+            IceON = true;
         }
         else
         {
+
             spell.SetActive(false);
+            IceON = false;
         }
     }
 }

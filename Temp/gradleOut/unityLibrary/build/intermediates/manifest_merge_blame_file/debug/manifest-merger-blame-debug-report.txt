@@ -142,7 +142,7 @@
 77-->/Users/lionelcordas/FriendyLand/Temp/gradleOut/unityLibrary/src/main/AndroidManifest.xml:18:5-101
 78            android:name="unity.build-id"
 78-->/Users/lionelcordas/FriendyLand/Temp/gradleOut/unityLibrary/src/main/AndroidManifest.xml:18:16-45
-79            android:value="35a8d330-293c-4342-9033-026619aeb814" />
+79            android:value="5faaedf3-7c62-4686-ba46-d611d5fa686b" />
 79-->/Users/lionelcordas/FriendyLand/Temp/gradleOut/unityLibrary/src/main/AndroidManifest.xml:18:46-98
 80        <meta-data
 80-->/Users/lionelcordas/FriendyLand/Temp/gradleOut/unityLibrary/src/main/AndroidManifest.xml:19:5-97
